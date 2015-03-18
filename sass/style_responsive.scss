@@ -1,0 +1,34 @@
+// W3C standard viewport declaration (IE10 metro requires this)
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+// Common styles
+@import "common";
+
+// Responsive styles
+.cAB-responsive {
+	// Used to be:
+	// @media screen and (max-width: $mediumSize) { ... }
+	// but needed to exclude iPad landscape
+	@media screen and (max-width: $mediumSize) and (min-device-width: 769px),
+			screen and (max-width: $mediumSize) and (device-width: 768px) and (orientation: portrait),
+			screen and (max-width: $mediumSize) and (max-device-width: 767px) {
+			html {
+				-webkit-text-size-adjust: none;
+				/* Prevent font scaling in landscape */
+			}
+		@import "app_medium";
+	}
+	// 
+	@media screen and (max-width: $smallSize),
+			screen and (max-device-width: 360px) and (orientation: portrait),
+			screen and (max-device-width: 380px) and (orientation: portrait) {
+			html {
+				-webkit-text-size-adjust: none;
+				/* Prevent font scaling in landscape */
+			}
+			@import "app_small";
+	}
+}
+

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="HandheldFriendly" content="true">
+<title>Aquabird</title>
+<script src="js/shared/jquery-1.10.2.js"></script>
+<script src="js/shared/jquery-ui.js"></script>
+
+<link type='text/css' href='css/style.css' rel='stylesheet'/>
+<link type='text/css' href='css/style_responsive.css' rel='stylesheet' />
+<link  type='text/css' href="css/jquery-ui.css" rel="stylesheet" />
+
+<link rel="stylesheet" type="text/css" href="css/msdropdown/dd.css" />
+<script src="js/msdropdown/jquery.dd.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/msdropdown/flags.css" />
+
+<script type="text/javascript" src="js/app.js"></script>
+
+<body class="cAB-responsive">
+<header>
+	<div class="cAB-container">
+		<div class="left">
+				<select name="countries" id="countries" style="width:300px;">
+				  <option value='ad' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ad" data-title="Andorra">Andorra</option>				  
+				  <option value='ai' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ai" data-title="Anguilla">Anguilla</option>
+				  <option value='al' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag al" data-title="Albania">Albania</option>
+				  <option value='am' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag am" data-title="Armenia">Armenia</option>
+			  </select>   
+			<span class="text">call (888) 77- (22226) or contact us</span>
+		</div>
+		<div class="right">
+			<a href="#"> Sign in or Register</a>
+			<a href="#"> <span class="sprite basket"></span> My basket <span id="basket">1</span></a>
+			<a href="#"> <span class="sprite order"></span> Quick order </a>			
+		</div>
+	</div>
+</header>
+<section id="search">
+	<div class="cAB-container">
+		<h1>
+			<img src="images/AB_logo.jpg" alt="Aquabird">
+		</h1>
+			<div id="search_bar">
+				
+					<select id="list_all" name="list_all"> 
+					  <option value="All">All</option>
+					  <option value="Specific">Specific</option>
+					</select>	
+				<input type="text" placeholder="enter protien, target, biomedical" >
+				<button type="button">Search</button>
+			</div>		
+	</div>
+</section>
+<nav>
+	<div class="cAB-container">
+		<div class="left">
+			<a href="#"> Products </a>
+			<a href="#"> Custom </a>
+			<a href="#"> Support </a>	
+			<a href="#"> Events </a>
+			<a href="#"> Pathways </a>	
+		</div>
+		<div class="right">
+			<a href="#"> Contact us </a>
+			<a href="#"> About us </a>
+			<a href="#"> Careers </a>
+		</div>
+	</div>
+</nav>
+<section id="corosuel">	
+	<div class="cAB-container">
+		 <div class="frame">
+			<div class="all-images">
+				<img src="images/banner1.jpg" id="img1" class="active_bar" alt="image1 description">
+				<img src="images/banner2.jpg" id="img2" alt="image2 description">
+				<img src="images/banner3.jpg" id="img3" alt="image3 description">
+				<img src="images/banner4.jpg" id="img4" alt="image4 description">
+			</div>
+			<div id="left" class="arrow"> &lt; </div>
+			<div id="right" class="arrow"> &gt; </div>
+			<div class="nav-dots">
+			<span>
+				<div value="1" class="active"></div>
+				<div value="2"></div>
+				<div value="3"></div>
+				<div value="4"></div>                 
+			</span>
+			</div>
+			<div class="slide_text">
+				<div value="1" class="slide show">
+					<h2>Validated antibody conjugates for cell imaging1</h2>
+					<a href="#">Search for products1 &gt;</a>
+				</div>
+				<div value="2" class="slide">
+					<h2>Validated antibody conjugates for cell imaging2</h2>
+					<a href="#">Search for products2 &gt;</a>
+				</div>
+				<div value="3" class="slide">
+					<h2>Validated antibody conjugates for cell imaging3</h2>
+					<a href="#">Search for products3 &gt;</a>
+				</div>
+				<div value="4" class="slide">
+					<h2>Validated antibody conjugates for cell imaging4</h2>
+					<a href="#">Search for products4 &gt;</a>
+				</div>         
+			</div>
+
+	  </div>
+	</div>
+</section>
+<section id="AB-lists">
+	<div class="cAB-container">
+		<div class="wrapper">
+			<article>
+				<h2>RabMAb products</h2>
+				<div>Primary antibody techonology</div>
+				<a href=#>See the advantages &gt;</a>
+			</article>
+			<article>
+				<h2>IHC kits & reagents</h2>
+				<div>improve your IHC</div>
+				<a href=#>Search for products  &gt;</a>
+			</article>
+			<article>
+				<h2>Protocols in video format</h2>
+				<div>Easy to watch, easy to learn</div>
+				<a href=#>Watch now  &gt;</a>
+			</article>
+		</div>
+		
+		<aside>
+			<p>catalogue updated last 21 min ago</p>
+		</aside>
+	</div>
+</section>
+<section id="AB-research">
+	<div class="cAB-container">
+		<h2>Latest content for research</h2>
+		<article id="news1">
+			<div>
+				<h3>New direct service to Austrlia and New Zealand</h3>
+				<h4>Offering improved dlivery times and direct technical support</h4>
+				<p>Refer a friend to our direct service to win $3000 credit and other goodies</p>
+			</div>
+			<img src="images/AB_logo2.jpg" alt="Aquabird Logo">
+		</article>
+		<article id="news2">
+			<img src="images/news2.jpg" alt="Aquabird Logo">
+			<h4>Neuronal plasticity protocol video</h4>
+			<p>Study GPCRs using high quality agonists & antagonists</p>
+		</article>
+	</div>
+</section>
+<footer>
+	<div class="cAB-container">
+		<div id="footer_top">
+			<div class="footer_left">
+				<ul>
+					<li>
+						<strong>A-Z by Research area</strong>
+						<a href="#">Cancer</a>
+						<a href="#">Cardiovascular</a>
+						<a href="#">Cell biology</a>
+						<a href="#">Developmental biology</a>
+						<a href="#">Drug Discovery Products & services</a>
+					</li>
+					<li>
+						<strong>A-Z by product type</strong>
+						<a href="#">Primary antibodies</a>
+						<a href="#">Secondary antibodies</a>
+						<a href="#">Biochemicals</a>
+						<a href="#">Isotype controls</a>
+						<a href="#">Flow cytometry multi-color selector</a>
+					</li>
+					<li>
+						<strong>Help & Support</strong>
+						<a href="#">Support</a>
+						<a href="#">Make an Inquiry</a>
+						<a href="#">Protocols & advices</a>
+						<a href="#">Buying FAQs</a>
+						<a href="#">RabMAb products</a>
+					</li>
+					<li>
+						<strong>Events</strong>
+						<a href="#">Tradeshows</a>
+						<a href="#">Conferences</a>
+						
+					</li>
+				</ul>
+			</div>
+			<div class="footer_right">
+				<span> Join With US </span>
+				<div id="footer_logos">
+					<a href="#"><span class="sprite_icons facebook"></span></a>
+					<a href="#"><span class="sprite_icons twitter"></span></a>
+					<a href="#"><span class="sprite_icons googleplus"></span></a>
+				</div>
+			</div>
+		</div>
+		<div id="footer_bottom">
+			<div class="footer_left">
+				<ul>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy policy</a></li>
+					<li><a href="#">Legal</a></li>
+					<li><a href="#">Email Unsubscribe</a></li>
+				</ul>
+			</div>
+			<div class="footer_right">
+				&copy;1998-2014.All rights reserved. 
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+<html>

@@ -1,0 +1,493 @@
+@import "common";
+
+.cAB-container {
+	width: 984px;
+	margin: 0 auto;
+}
+
+header{
+	background-color: #014E8B;
+	border-bottom: 4px solid #FFC40F;
+	color: white;
+	
+	a{
+		border-right: 1px solid white;
+		text-decoration: none;
+		
+		&:link , &:visited , &:hover , &:active{
+			color: white;
+		}
+		
+	}
+	select ,span ,a {
+		display:inline-block;
+		
+	}
+	.text,select, a{
+		padding:5px;
+	}
+	#basket{
+		border: 1px solid white;
+		padding: 1px;
+	}
+	.sprite{
+		
+		width: 15px;
+		height: 15px;
+		background: url(../images/basket_icons.jpg) no-repeat;	
+		overflow: hidden;
+		background-size: auto 24px;
+		
+	}
+	.basket{
+		background-position: -9px -5px;
+	}
+	.order{
+		background-position: -32px -4px;
+	}
+	.left{
+		float: none;
+		position :relative;
+		display:inline-block;
+	}	
+	.right{
+		float: right;
+		position :relative;
+		display:inline-block;
+	}
+}
+#search{
+	h1,select,input,button{
+		display:inline-block;
+	}
+	h1{		
+		width: 20%;
+		vertical-align: middle;
+	}
+	
+	/* The custom select CSS */
+	select {
+		padding:3px;
+		margin: 0;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+		border-radius:4px;
+		-webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+		-moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+		box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+		background: #f8f8f8;
+		color:#888;
+		border:none;
+		outline:none;
+		display: inline-block;
+		-webkit-appearance:none;
+		-moz-appearance:none;
+		appearance:none;
+		cursor:pointer;
+	}
+
+	label {position:relative}
+	label:after {
+		content:'>';
+		font:15px "Consolas", monospace;
+		color:#aaa;
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+		-ms-transform:rotate(90deg);
+		transform:rotate(90deg);
+		right:8px; top:2px;
+		padding:11px 15px 0 0px;
+		position:absolute;
+		pointer-events:none;
+	}
+	label:before {
+		content:'';
+		right:6px; top:0px;
+		width:20px; height:20px;
+		background:#f8f8f8;
+		position:absolute;
+		pointer-events:none;
+		display:block;
+	}
+	
+	#search_bar{
+		//margin: 1.5em 1.5em;
+		border: 2px solid rgba(0, 0, 0, 0.11);
+		border-radius: 5px;
+		overflow: hidden;
+		width: 75%;
+		display: inline-block;
+		vertical-align:middle;
+		
+		input,select{
+			border : none;
+			padding:20px;
+			margin-bottom: -2px;
+			margin-top: -2px;
+		}
+		button{
+			padding: 20px;
+			float: right;
+			margin-bottom: -2px;
+			margin-top: -2px;
+		}
+		input{
+			width:60%;
+		}
+		select{	
+			border-right: 2px solid rgba(0, 0, 0, 0.11);
+		}
+	}
+}
+nav{
+	padding: 10px;
+	a{
+		margin-right: 10px;
+	}
+	.left{
+		a{
+			
+			&:link , &:visited , &:hover , &:active{
+				font-weight:bold;
+				color: black;
+			}
+			
+		}
+	}
+	.right{
+		a{
+			
+			&:link , &:visited , &:hover , &:active{
+				color: #014E8B;
+			}
+			
+		}
+	}
+
+}
+#corosuel{
+	padding: 5px 0;
+	.cAB-container{
+		text-align: center;
+	}
+		/* Images */
+	.frame {
+	  position: relative;
+	  width: 100%;;
+	  height: 300px;
+	  overflow: hidden;
+	}
+	.all-images {
+	  height: 480px;
+	  position: absolute;
+	  top: 0;
+	  
+	  img{
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		height: 0px;
+		transition: height 0.5s;
+	  }
+	}
+	.all-images img.active_bar{
+					height: 100%;    
+	}
+	.slide_text{
+		position:absolute;
+		bottom: 0;
+	   .slide{
+			height: 0;
+			overflow:hidden;
+		}
+	}
+	
+	.slide_text .slide.show{
+		height: 100%;
+		opacity: 0.8;
+		background-color: white;
+		padding: 25px 25px 150px;
+		a{
+			border: 1px solid lightblue;
+			border-radius: 5px;
+			background-color: #014E8B;
+			color: white;
+			padding: 10px;
+		}
+	}
+	.arrow {
+	  position: absolute;
+	  margin: auto;
+	  top: 0;
+	  bottom: 0;
+	  height: 50px;
+	  width: 50px;
+	  opacity: 0.5;
+	  cursor: pointer;
+	  vertical-align: middle;
+	  line-height: 50px;
+	  border: 1px solid black;
+	  background-color: yellow;
+	  font-weight: bold;
+	  z-index:1;
+	}
+	 
+	.arrow:hover {
+	  opacity: 0.8;
+	  background-color: lightblue;
+	}
+	#left {
+	  left: 0;
+	}
+	#right {
+	  right: 0;
+	}
+	 
+	/* Navigation */
+	.nav-dots {
+		position:            absolute;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		div {
+		  display: inline-block;
+		  height: 16px;
+		  width: 16px;
+		  margin: 10px;
+		  border: 2px solid #252b30;
+		  -webkit-border-radius: 50%;
+			 -moz-border-radius: 50%;
+				  border-radius: 50%;
+		  cursor: pointer;
+		}
+		span{
+			display: inline-block;
+			background-color: white;
+		}
+		div:hover {
+		  opacity: 0.7;
+		}
+	}
+
+	.active {
+	  background-color: #1D5C91;
+	 
+	}
+
+
+}
+#AB-lists{
+	article{
+		width:30%;
+		display: inline-block;
+		height: 110px;
+		div{
+			margin-bottom: 25px;
+		}
+		
+	}
+	article:not(:last-child){
+		border-right: 1px solid #D3D3D3;
+		margin-right: 10px;
+	}
+	.wrapper{
+		width: 75%;
+		display: inline-block;
+		padding: 25px 0;
+		border-bottom: 1px solid #D3D3D3;
+		margin-right: 10px;
+	}
+	aside{
+		width: 23%;
+		display: inline-block;
+		vertical-align: bottom; 
+		border: 1px solid #D3D3D3;
+		padding: 5px 16px;
+		background-color: #D3D3D3;
+	}
+	h2{
+		display:inline-block;
+		font-size: 15px;
+	}
+	a{
+		background-color: #D3D3D3;
+		border: 1px solid #b4b4b4;
+		padding: 10px;
+		border-radius : 5px;
+		font-weight: bold;
+		&:link , &:visited , &:hover , &:active{
+				color: #014E8B;
+		}
+			
+	}
+}
+#AB-research{
+	article{
+		border: 1px solid #D3D3D3;
+		display: inline-block;
+		position: relative;
+		padding: 10px;
+		height: 265px;
+		h3{
+			font-size: 35px;
+		}
+		h4{
+			color: #014E8B;
+		}
+		div{
+			display:inline-block;
+			
+		}
+	}
+	#news1{
+		width: 66%;
+		margin-right: 20px;
+		div{
+			width: 75%;
+		}
+		div,img{
+			position: relative;
+			vertical-align: middle;
+		}
+		
+	}
+	#news2{
+		width: 31%;
+		float:right;
+		img{
+			width: 100%;
+			height: 150px;
+		}
+		  
+	}	
+}
+footer{
+	font-size: 14px;
+	margin-top: 20px;
+	background-color: #32363A;
+	border-top: 4px solid #FFC40F;
+	color: white;
+	padding: 23px 28px 10px 30px;
+	overflow:hidden;
+	a{
+		display:block;
+		text-decoration: none;
+		margin-top: 10px;
+		
+		&:link , &:visited , &:hover , &:active{
+			color: white;
+		}
+		
+	}
+	ul {
+		padding-left: 0;
+		margin-left: 0;
+		padding-top: 5px;
+		margin-top: 0;
+		float: left;
+		li {
+			margin-right: 9px;
+			padding-right: 9px;
+			margin-bottom: 10px;
+			list-style: none;
+			float: left;
+			width:189px;
+		}
+	}
+	div{
+		position:relative;
+		display:block;
+	}
+	#footer_top{
+		.footer_right{
+			display:inline-block;
+			float:none;
+			vertical-align: middle;
+			#footer_logos{
+				a{
+					display:inline-block;
+					img{
+						width: 30px;
+						height: 30px;
+						//background: url(../images/social-media.png) no-repeat;	
+					}
+					.sprite_icons{
+						display: block;
+						width: 30px;
+						height: 30px;
+						background: url(../images/social-icons.png) no-repeat;	
+						overflow: hidden;
+						background-size: auto 100px;
+						background-position: 0px 0px;
+						
+					}
+					.facebook{
+						background-position: 0 -35px;
+					}
+					.twitter{
+						background-position: -267px -35px;
+					}
+					.googleplus{
+						background-position: -101px -35px;
+					}
+					
+				}
+			}
+		}
+	}
+	#footer_bottom{
+		margin-top: 20px;
+		a{
+			margin-top: 0;
+		}
+		ul{
+			padding-top: 0;
+			li{
+				width: auto;
+				border-right:1px solid white;
+				margin-right : 10px ;
+			}
+			li:last-child{
+				border-right: none;
+			}
+			
+		}
+		.footer_left{
+			float:left;
+		}
+		.footer_right{
+			float:right;
+		}
+	}
+	.footer_left{
+		display:inline-block;
+		vertical-align: middle;
+	}
+	
+
+}
+//Country select properties override
+.dd.ddcommon.borderRadius,.dd.ddcommon.borderRadiusTp{
+	
+	width: 125px !important;
+	border: 1px solid #138FF0;
+	border-radius:0 !important;
+}
+.dd .ddTitle.borderRadiusTp{
+	background: none;
+	color: white;
+	.divider{
+		border: none;
+	}
+}
+//Custom ui select override
+#list_all-button{
+	float: left;
+    height: 59px;
+	.ui-selectmenu-text{
+		padding-top: 17px;
+	}
+}

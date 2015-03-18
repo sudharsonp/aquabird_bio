@@ -1,0 +1,48 @@
+.cAB-container {
+    margin: 0 auto;
+    width: 100%;
+}
+.left,.right{
+	float: none;
+	position :relative;
+	display: inline;
+}
+
+header{
+	a{
+		border-right: none;
+	}
+}
+
+#AB-lists {
+	article {
+		width: auto;
+		padding-right: 10px;
+	}
+	aside{
+		width: 100%;
+	}
+	.wrapper {
+		width: auto;
+	}
+}
+#AB-research{
+	article {
+		height: auto;
+	}
+	#news1{
+		width: 100%;
+	}
+	#news2{
+		width: 100%;
+	}
+}
+footer {
+	ul {
+		li {
+			width:auto;
+			margin-bottom: 40px;
+			margin-right: 20px;
+		}
+	}
+}

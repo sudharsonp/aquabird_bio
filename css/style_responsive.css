@@ -1,0 +1,185 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+@-o-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* SET UP FONTS */
+/* HTML5 display-role reset for older browsers */
+/* line 29, ../sass/_common.scss */
+header {
+  display: block;
+}
+
+/* line 32, ../sass/_common.scss */
+body {
+  line-height: 1;
+}
+
+/* General */
+/* line 37, ../sass/_common.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 45, ../sass/_common.scss */
+.left {
+  float: left;
+  position: relative;
+}
+
+/* line 49, ../sass/_common.scss */
+.right {
+  float: right;
+  position: relative;
+}
+
+/* line 53, ../sass/_common.scss */
+section, nav {
+  overflow: hidden;
+}
+/* line 56, ../sass/_common.scss */
+section:after, nav:after {
+  clear: both;
+}
+
+/* line 60, ../sass/_common.scss */
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 983px) and (min-device-width: 769px), screen and (max-width: 983px) and (device-width: 768px) and (orientation: portrait), screen and (max-width: 983px) and (max-device-width: 767px) {
+  /* line 17, ../sass/style_responsive.scss */
+  .cAB-responsive html {
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
+  }
+  /* line 1, ../sass/_app_medium.scss */
+  .cAB-responsive .cAB-container {
+    margin: 0 auto;
+    width: 100%;
+  }
+  /* line 5, ../sass/_app_medium.scss */
+  .cAB-responsive .left, .cAB-responsive .right {
+    float: none;
+    position: relative;
+    display: inline;
+  }
+  /* line 12, ../sass/_app_medium.scss */
+  .cAB-responsive header a {
+    border-right: none;
+  }
+  /* line 18, ../sass/_app_medium.scss */
+  .cAB-responsive #AB-lists article {
+    width: auto;
+    padding-right: 10px;
+  }
+  /* line 22, ../sass/_app_medium.scss */
+  .cAB-responsive #AB-lists aside {
+    width: 100%;
+  }
+  /* line 25, ../sass/_app_medium.scss */
+  .cAB-responsive #AB-lists .wrapper {
+    width: auto;
+  }
+  /* line 30, ../sass/_app_medium.scss */
+  .cAB-responsive #AB-research article {
+    height: auto;
+  }
+  /* line 33, ../sass/_app_medium.scss */
+  .cAB-responsive #AB-research #news1 {
+    width: 100%;
+  }
+  /* line 36, ../sass/_app_medium.scss */
+  .cAB-responsive #AB-research #news2 {
+    width: 100%;
+  }
+  /* line 42, ../sass/_app_medium.scss */
+  .cAB-responsive footer ul li {
+    width: auto;
+    margin-bottom: 40px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 599px), screen and (max-device-width: 360px) and (orientation: portrait), screen and (max-device-width: 380px) and (orientation: portrait) {
+  /* line 27, ../sass/style_responsive.scss */
+  .cAB-responsive html {
+    -webkit-text-size-adjust: none;
+    /* Prevent font scaling in landscape */
+  }
+  /* line 3, ../sass/_app_small.scss */
+  .cAB-responsive .cAB-container {
+    padding: 0 15px;
+  }
+  /* line 7, ../sass/_app_small.scss */
+  .cAB-responsive .left, .cAB-responsive .right {
+    float: none;
+    position: relative;
+    display: block;
+  }
+  /* line 13, ../sass/_app_small.scss */
+  .cAB-responsive #search h1 {
+    margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
+    display: block;
+  }
+  /* line 19, ../sass/_app_small.scss */
+  .cAB-responsive #search #search_bar {
+    display: block;
+    width: auto;
+  }
+  /* line 22, ../sass/_app_small.scss */
+  .cAB-responsive #search #search_bar input {
+    width: auto;
+  }
+  /* line 28, ../sass/_app_small.scss */
+  .cAB-responsive nav .left, .cAB-responsive nav .right {
+    margin-top: 10px;
+  }
+  /* line 33, ../sass/_app_small.scss */
+  .cAB-responsive #AB-lists article {
+    width: 100%;
+    border-right: none;
+    margin-right: 0;
+  }
+  /* line 37, ../sass/_app_small.scss */
+  .cAB-responsive #AB-lists article h1, .cAB-responsive #AB-lists article div, .cAB-responsive #AB-lists article a {
+    position: relative;
+  }
+  /* line 41, ../sass/_app_small.scss */
+  .cAB-responsive #AB-lists article:not(:last-child) {
+    border-bottom: 1px solid #d3d3d3;
+    height: auto;
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+  }
+  /* line 47, ../sass/_app_small.scss */
+  .cAB-responsive #AB-lists aside {
+    width: 100%;
+  }
+  /* line 50, ../sass/_app_small.scss */
+  .cAB-responsive #AB-lists .wrapper {
+    width: auto;
+  }
+  /* line 56, ../sass/_app_small.scss */
+  .cAB-responsive footer #footer_top li {
+    float: none;
+  }
+  /* line 59, ../sass/_app_small.scss */
+  .cAB-responsive footer #footer_top .footer_right {
+    display: block;
+  }
+  /* line 64, ../sass/_app_small.scss */
+  .cAB-responsive footer #footer_bottom .footer_right {
+    float: none;
+  }
+}

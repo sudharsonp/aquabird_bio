@@ -1,0 +1,62 @@
+@import "compass/css3/images";
+
+// Breakpoints
+$mediumSize: 983px;
+$smallSize: 599px;
+
+$mediumGutter: 16px;
+$smallGutter: 15px;
+
+
+/* SET UP FONTS */
+$defaultFontDir: "../../fonts";
+@mixin add-font($familyName, $baseFaceName, $weight, $style, $otherFontDir:"") {
+	$fontDir: if($otherFontDir!="", $otherFontDir, $defaultFontDir);	// optionally, use specified dir instead of default
+	$fontPath: $fontDir + "/" + $baseFaceName;
+	@font-face {
+		font-family: $familyName;
+		font-weight: $weight;
+		font-style: $style;
+		src: url($fontPath + ".eot");	// IE
+		src: local("'"),	// Ignore local fonts
+			 url($fontPath + ".woff") format("woff"),
+			 url($fontPath + ".ttf") format("truetype"),
+			 url($fontPath + ".svg#webfont") format("svg");
+	}
+}
+
+/* HTML5 display-role reset for older browsers */
+header {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ 
+/* General */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+//Common global styles
+.left{
+	float: left;
+	position :relative;
+}
+.right{
+	float: right;
+	position :relative;
+}
+section,nav{
+	overflow: hidden;
+	
+	&:after{
+		clear : both;
+	}
+}
+a{
+	text-decoration: none;
+}
